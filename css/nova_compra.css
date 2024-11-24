@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 200px;
+    background-color: #4D4D4D;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+/* Container principal */
+.main-content {
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tela de Nova Compra */
+.new-purchase {
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.new-purchase h1 {
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+/* Formulário */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+}
+
+.form-group img {
+    margin-right: 10px;
+}
+
+.form-group label {
+    font-size: 0.9em;
+    color: #333;
+    flex: 1;
+    text-align: left;
+}
+
+.form-group input,
+.form-group select {
+    flex: 3;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    font-size: 1em;
+    width: 100%;
+}
+
+/* Remover seta do select e ajustar o tamanho */
+#selecionar-produto,
+#selecionar-fornecedor {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: none;
+    border: 1px solid #333;
+    width: 100%;
+}
+
+/* Remover setas de input type number (campo quantidade) */
+#quantidade::-webkit-outer-spin-button,
+#quantidade::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Botão */
+.button-submit {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid #333;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    margin-top: 30px;
+    display: block; /* Garante que o botão seja tratado como um bloco */
+    width: 100%;
+    max-width: 400px; /* Define uma largura máxima para o botão */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza o botão */
+}
+
+/* Mensagens de erro e sucesso */
+h3 {
+    font-size: 14px;
+}
+
+h3.red {
+    color: red;
+}
+
+h3.green {
+    color: green;
+}

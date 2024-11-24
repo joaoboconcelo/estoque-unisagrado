@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 200px;
+    background-color: #4D4D4D;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* Links da barra lateral */
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.sidebar h2 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+/* Container principal (conteúdo ao lado da barra lateral) */
+.main-content {
+    margin-left: 220px;
+    flex: 1;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+/* Tela de Lista de Usuários */
+.history-users {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Título da Lista de Usuários */
+.history-users h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Tabela de Usuários */
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.user-table th {
+    background-color: #4D4D4D;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+.user-table td {
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.user-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilo para o botão */
+.user-table button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.user-table button:hover {
+    background-color: #e94e27;
+}
